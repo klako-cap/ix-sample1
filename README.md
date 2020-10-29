@@ -1,25 +1,17 @@
-# Getting Started
+# A simple CAP Sample
 
-Welcome to your new project.
+### Order of doing things ...
 
-It contains these folders and files, following our recommended project layout:
-
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
-
-
-## Next Steps
-
-- Open a new terminal and run `cds watch` 
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+1. ``cds init ix-sample1``
+2. Start IDE in project folder
+3. Fill ``db/`` and ``srv/`` folders with model cds-files
+4. Start ``cds watch``
+5. Maintain test data in ``db/data/``
+6. Compute margin in ``after.READ`` handler
+7. Implement test for positive margin in ``before.CREATE`` handler
+8. Test POST-Request with HTTP-client
+9. Deploy to HANA with ``cds deploy --to hana``
+10. Do ``cds build``
+11. Deploy to Cloud Foundry
 
 
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
