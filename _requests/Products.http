@@ -1,0 +1,21 @@
+### Create Product
+POST http://localhost:4004/cat/Products 
+Content-Type: application/json;IEEE754Compatible=true
+
+{ 
+    "ID": 701,
+    "name": "New Flat Screen",
+    "price": "189.51",
+    "retail": "211.34",
+    "currency_code": "EUR",
+    "supplier_ID": 301
+}
+
+### Update Product
+PATCH http://localhost:4004/cat/Products(701) 
+Content-Type: application/json;IEEE754Compatible=true
+
+{ 
+    "price": "189.51",
+    "retail": "111.34"
+}

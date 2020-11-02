@@ -1,17 +1,23 @@
-# A simple CAP Sample
+# A simple CAP sample service
 
 ### Order of doing things ...
 
-1. ``cds init ix-sample1``
-2. Start IDE in project folder
-3. Fill ``db/`` and ``srv/`` folders with model cds-files
-4. Start ``cds watch``
-5. Maintain test data in ``db/data/``
-6. Compute margin in ``after.READ`` handler
-7. Implement test for positive margin in ``before.CREATE`` handler
-8. Test POST-Request with HTTP-client
-9. Deploy to HANA with ``cds deploy --to hana``
-10. Do ``cds build``
-11. Deploy to Cloud Foundry
+1. Projekt setup
+   +  ``cds init ix-sample1``
+   + Start IDE in project folder
+2. Maintain domain and service model
+   + Fill ``db/`` and ``srv/`` folders with model cds-files
+3. Testing locally
+   + Start ``cds watch``. 
+   + Maintain test data in ``db/data/``
+4. Implement event handlers
+   + Compute margin in ``after.READ`` handler. 
+   + Implement test for positive margin in ``before.CREATE`` handler. 
+   + Test POST-Request with HTTP-client
+5. Localisation: Maintain languages and use ``?sap-language`` to test.
+6. Deployment to SAP Cloud Platform
+   + Deploy to HANA with ``cds deploy --to hana``
+   + Do ``cds build``
+   + Deploy to Cloud Foundry Environment
 
 
