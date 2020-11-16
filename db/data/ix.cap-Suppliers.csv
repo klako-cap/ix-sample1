@@ -1,4 +1,5 @@
-ID;name;
-301;"Vendor 301"
-302;"Vendor 302"
-303;"Vendor 303"
+ID;name;country_code;rating
+301;"Medienhardware GmbH";"DE";1
+302;"XXL-Schreibwaren";"DE";2
+303;"Surprise Equipments";"US";2
+304;"Schreibwaren Lui";"DE";3

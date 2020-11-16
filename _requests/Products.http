@@ -1,5 +1,5 @@
 ### Create Product
-POST http://localhost:4004/cat/Products 
+POST http://localhost:4004/catalog/Products 
 Content-Type: application/json;IEEE754Compatible=true
 
 { 
@@ -12,7 +12,7 @@ Content-Type: application/json;IEEE754Compatible=true
 }
 
 ### Update Product
-PATCH http://localhost:4004/cat/Products(701) 
+PATCH http://localhost:4004/catalog/Products(701) 
 Content-Type: application/json;IEEE754Compatible=true
 
 { 

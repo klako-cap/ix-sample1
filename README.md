@@ -13,7 +13,7 @@
 4. Implement event handlers
    + Compute margin in ``after.READ`` handler. 
    + Implement test for positive margin in ``before.CREATE`` handler. 
-   + Test POST-Request with HTTP-client
+   + Test POST-Request with curl HTTP-client
 5. Localisation: Maintain languages and use ``?sap-language`` to test.
 6. Deployment to SAP Cloud Platform
    + Deploy to HANA with ``cds deploy --to hana``

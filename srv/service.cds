@@ -1,6 +1,17 @@
+// Import domain model
 using ix.cap as domain from '../db/schema';
-@(path: '/cat')
+
+// Expose all operations on Products and Suppliers
 service CatalogService {
     entity Products as projection on domain.Products;
-    @readonly entity Suppliers as projection on domain.Suppliers; 
+    entity Suppliers as projection on domain.Suppliers;
+}
+
+// Expose restricted, non-updatable views
+@path: '/cat/de'
+service BrowseCatalogDE {
+    entity Products as select * from domain.Products 
+        where supplier.country.code = 'DE';
+    entity Suppliers as select * from domain.Suppliers
+        where country.code = 'DE'; 
 }
