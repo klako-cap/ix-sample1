@@ -2,8 +2,7 @@ module.exports = (srv)=>{
 
     // Extract the 'Products' service entity
     const { Products } = srv.entities;
-    let a =1;
-  
+    
     /* Compute margin after reading from the
        database through GET requests         */
     srv.after ('READ', Products, (each)=>{

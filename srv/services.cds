@@ -15,3 +15,6 @@ service BrowseCatalogDE {
     entity Suppliers as select * from domain.Suppliers
         where country.code = 'DE'; 
 }
+
+// suppress autoexposure of Entity Countries which is referenced by type Country used in the domain model
+annotate sap.common.Countries with @cds.autoexpose: false;
