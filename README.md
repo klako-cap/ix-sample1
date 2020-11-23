@@ -16,11 +16,13 @@ This is a little tricky and lengthy. That's why it was too involved to describe 
 
 Note, that the file [package.json](package.json) contains a CDS database configuration section which is a little different, than listed in the iX-article:
 ```json
+...
     "requires": {
       "db": {
         "kind": "sql"
       }
     }
+...
 ```
 The difference is the use of ``"kind": "sql"`` instead of ``"kind": "hana"``. This makes is easier to switch back and forth between deploying to SQLite and SAP HANA. ``"kind": "sql"`` is interpreted differently depending on the set **configuration profile**. There are two standard profiles which you can choose by setting the environment variable NODE_ENV to either ``development`` (or just do not set NODE_ENV), or ``production``. If the development profile is set, SQLite is used as target. If the production profile is set, SAP HANA is used as target.
 

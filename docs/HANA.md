@@ -1,7 +1,7 @@
 # How to connect to an SAP HANA Cloud Service with CAP
 
 ## Get an account on SAP Cloud Platform
-Either you get a paid account from SAP, or you start with a trial account. In any case, this [english page](www.sap.com/products/cloud-platform.html) and this [german page](https://www.sap.com/germany/products/cloud-platform.html) contains all infos and links you need to get started.
+Either you get a paid account from SAP, or you start with a trial account. In any case, this [english page](https://www.sap.com/products/cloud-platform.html) and this [german page](https://www.sap.com/germany/products/cloud-platform.html) contains all infos and links you need to get started.
 
 ## Create an SAP HANA Cloud Service instance
 Use SAP Cloud Platform Cockpit to navigate to one of your Cloud Foundry Spaces. In navigation pane to the left, choose "SAP HANA Cloud". Select the button "Create Database". Fill in an instance name and the administrator password. Use this password later to administrate the instance as user DBADMIN.
