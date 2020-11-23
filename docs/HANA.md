@@ -2,7 +2,6 @@
 
 ## Get an account on SAP Cloud Platform
 Either you get a paid account from SAP, or you start with a trial account. In any case, this [english page](www.sap.com/products/cloud-platform.html) and this [german page](https://www.sap.com/germany/products/cloud-platform.html) contains all infos and links you need to get started.
-<br>
 
 ## Create an SAP HANA Cloud Service instance
 Use SAP Cloud Platform Cockpit to navigate to one of your Cloud Foundry Spaces. In navigation pane to the left, choose "SAP HANA Cloud". Select the button "Create Database". Fill in an instance name and the administrator password. Use this password later to administrate the instance as user DBADMIN.
@@ -10,11 +9,8 @@ Use SAP Cloud Platform Cockpit to navigate to one of your Cloud Foundry Spaces. 
 Press "Step2". You might want to change memory settings here. No need to do this for trials. Press "Step3". Here, you have to think about IP-Addresses. If you want to connect to this instance from your local computer, you have to add the computer's IP to the "Allowed connections" list. You need this for instance, when using ``cds deploy --to hana`` on you computer.
 
 Finally, press "Step 4" and/or "Create Instance". Instance creation takes while ...
-<br>
-<br>
 
 ## What poor Windows users have to do
-<br>
 
 ### Visual Studio Build Tools
 Some npm-modules are made to become natively compiled during installation. This happens for instance for the SAP HANA driver for npm. On Windows you need to install the **Visual Studio Build Tools** to let your system do such native builds. For installation, do the following:
@@ -40,14 +36,11 @@ registry = "https://registry.npmjs.org/"
 python = "C:\\Users\\abcde\\.windows-build-tools\\python27\\
 python.exe"
 ```
-<br>
 
 ### SAP Common CryptoLib
 Before being able to use the command ``cds deploy --to hana``, as a Windows user, you have to install the **SAP Common CryptoLib**. To download this library from the SAP Software Download Center, you have to have an S-User. This means you have to be an SAP Customer!
 
 Go to https://help.sap.com/viewer/product/SAP_DATA_SERVICES/ and enter the search term "SAP CommonCryptoLib". In the result list, follow the link to "Obtaining the SAP CommonCryptoLib file in Windows and Unix". Follow the instructions there.
-<br>
-<br>
 
 ## Deploy from your local machine
 Use the command ``cds deploy --to hana`` to deploy CDS database content to a remote SAP HANA Cloud Service instance.
