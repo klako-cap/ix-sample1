@@ -1,8 +1,8 @@
 {
-  "name": "ix-sample",
+  "name": "ix-sample1",
   "version": "1.0.0",
-  "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
+  "description": "A two service CAP project.",
+  "repository": "https://github.com/klako-cap/ix-sample1",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
