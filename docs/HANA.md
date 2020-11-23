@@ -22,7 +22,7 @@ This will donwload approx. 3 GB of software. So be patient. If everything went r
 
 ![Success](assets/success.png)
 
-If you feel the process is hanging, using CRTL+C and restart the installation. You can verify the installation by using the command ``npm config ls``. This should output something like the following. The ``globalconfig`` entry on Python is essential.
+If you feel the process is hanging, use CRTL+C to stop it and restart the installation. You can verify the installation by using the command ``npm config ls``. This should output something like the following. The ``globalconfig`` entry on Python is essential.
 
 ```
 >> npm config ls
