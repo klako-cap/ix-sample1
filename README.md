@@ -26,7 +26,7 @@ Note, that the file [package.json](package.json) contains a CDS database configu
 ```
 The difference is the use of ``"kind": "sql"`` instead of ``"kind": "hana"``. This makes is easier to switch back and forth between deploying to SQLite and SAP HANA. ``"kind": "sql"`` is interpreted differently depending on the set **configuration profile**. There are two standard profiles which you can choose by setting the environment variable NODE_ENV to either ``development`` (or just do not set NODE_ENV), or ``production``. If the development profile is set, SQLite is used as target. If the production profile is set, SAP HANA is used as target.
 
-So, if you want to deploy your model and data to SAP HANA, set NODE_ENV to ``production`` and spawn the command ``cds deploy``. After a successful deployment, use ``cds watch`` for testing as before. After setting back NODE_ENV to ``development``, ``cds watch`` will use SQLite again.
+So, if you want to deploy your model and data to SAP HANA, set NODE_ENV to ``production`` and spawn the command ``cds deploy``. After a successful deployment, use ``cds watch`` for testing as before. After setting back NODE_ENV to ``development``, ``cds watch`` will use SQLite again. Even simpler, you can switch to production mode once temporarily by using the ``--production`` flag, like in ``cds watch --production``. No need to change environment variables then.
 
 
 
