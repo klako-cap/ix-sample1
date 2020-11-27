@@ -6,7 +6,7 @@ entity Products {
       name     : localized String(100) not null @title: '{i18n>name}'; 
       price    : Decimal(9,2)                   @title: '{i18n>price}';
       retail   : Decimal(9,2)                   @title: '{i18n>retail}';
-      virtual margin : Decimal(9,2)             @title: '{i18n>margin}';
+      virtual margin : Decimal(9,2)             @title: '{i18n>margin}'; // a calculated field
       currency : Currency;
       supplier : Association to Suppliers;
 }

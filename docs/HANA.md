@@ -43,4 +43,4 @@ Before being able to use the command ``cds deploy --to hana``, as a Windows user
 Go to https://help.sap.com/viewer/product/SAP_DATA_SERVICES/ and enter the search term "SAP CommonCryptoLib". In the result list, follow the link to "Obtaining the SAP CommonCryptoLib file in Windows and Unix". Follow the instructions there.
 
 ## Deploy from your local machine
-Use the command ``cds deploy --to hana`` to deploy CDS database content to a remote SAP HANA Cloud Service instance.
+Use the command ``cds deploy --to hana`` to deploy CDS database content to a remote SAP HANA Cloud Service instance. As a prerequisite, install the [Cloud Foundry Command Line Interface](https://docs.cloudfoundry.org/cf-cli/).

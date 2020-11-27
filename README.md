@@ -28,10 +28,12 @@ The difference is the use of ``"kind": "sql"`` instead of ``"kind": "hana"``. Th
 
 So, if you want to deploy your model and data to SAP HANA, set NODE_ENV to ``production`` and spawn the command ``cds deploy``. After a successful deployment, use ``cds watch`` for testing as before. After setting back NODE_ENV to ``development``, ``cds watch`` will use SQLite again. Even simpler, you can switch to production mode once temporarily by using the ``--production`` flag, like in ``cds watch --production``. No need to change environment variables then.
 
-
+## Deploy to SAP Cloud Platform
++ Install the Create-Service-Push-Plugin for the Cloud Foundry CLI via ``cf install-plugin Create-Service-Push``.
++ Use ``cds add cf-manifest`` to generate the deployment manifests ``manifest.yml`` and ``services-manifest.yml``.
++ Deploy everything with ``cf create-service-push``.
 
 ## Getting more help
-
 + [Offical SAP CAP reference docu](https://cap.cloud.sap/)
-+ [Anwendungsentwicklung auf der SAP Cloud Platform](https://www.sap-press.de/5110). German. Published by Rheinwerk Verlag.
++ [Anwendungsentwicklung auf der SAP Cloud Platform](https://www.sap-press.de/5110) (in German). Published by Rheinwerk Verlag.
 
