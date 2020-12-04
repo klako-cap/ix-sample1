@@ -1,6 +1,6 @@
 # iX Sample Service
 
-This is a sample project for creating two REST-services with the **SAP Cloud Application Programming Model** ([CAP](https://cap.cloud.sap/)). It has been used as an introduction to CAP within my article in the German journal [iX - Magazin für professionelle Informationstechnik](https://www.heise.de/ix/), vol. ??, [month] 2021.
+This is a sample project for creating two REST-services with the **SAP Cloud Application Programming Model** ([CAP](https://cap.cloud.sap/)). It has been used as an introduction to CAP within my article in the German journal [iX - Magazin für professionelle Informationstechnik](https://www.heise.de/ix/), vol. 2/2021.
 
 ## Running on a local machine
 + You need to have Node.js and SQLite installed.
