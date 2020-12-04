@@ -1,14 +1,25 @@
-# How to connect to an SAP HANA Cloud Service with CAP
+# How to work with an SAP HANA Cloud Service
++ in the Cloud Foundry Environment of SAP Cloud Platform
++ from a CAP perspective
 
 ## Get an account on SAP Cloud Platform
 Either you get a paid account from SAP, or you start with a trial account. In any case, this [english page](https://www.sap.com/products/cloud-platform.html) and this [german page](https://www.sap.com/germany/products/cloud-platform.html) contains all infos and links you need to get started.
 
 ## Create an SAP HANA Cloud Service instance
-Use SAP Cloud Platform Cockpit to navigate to one of your Cloud Foundry Spaces. In navigation pane to the left, choose "SAP HANA Cloud". Select the button "Create Database". Fill in an instance name and the administrator password. Use this password later to administrate the instance as user DBADMIN.
+An SAP HANA Cloud Service instance represents an SAP HANA Database instance. Use SAP Cloud Platform Cockpit to navigate to one of your Cloud Foundry Spaces. In navigation pane to the left, choose "SAP HANA Cloud". Select the button "Create Database". Fill in an instance name and the administrator password. Use this password later to administrate the instance as user DBADMIN.
 
 Press "Step2". You might want to change memory settings here. No need to do this for trials. Press "Step3". Here, you have to think about IP-Addresses. If you want to connect to this instance from your local computer, you have to add the computer's IP to the "Allowed connections" list. You need this for instance, when using ``cds deploy --to hana`` on you computer.
 
 Finally, press "Step 4" and/or "Create Instance". Instance creation takes while ...
+
+## Managing SAP HANA Cloud Service instances
+**On trial accounts, your SAP HANA instance is stopped each night. You have to manually restart it!** To achive this, go to the Space-view of SAP Cloud Platform Cockpit and choose "SAP HANA Cloud" in navigation pane to the left. Press the button "Manage SAP HANA Cloud" on the top right. This opens a new window/tab which lets you manage your databases.
+
+## Sharing database instances
+You can share a database instance across Cloud Foundry organizations and spaces. If you have only one database created within a subaccount, applications from all spaces of this subaccount can access it automatically. If you have multiple databases in one subaccount, you need to create a database mapping. A mapping is also needed if you want to access a database from a different subaccount. 
+
+You create a mapping from view "Manage SAP HANA Cloud" (see above). There, click on the name of a database instance to open the mapping dialog.
+
 
 ## What poor Windows users have to do
 
@@ -42,5 +53,7 @@ Before being able to use the command ``cds deploy --to hana``, as a Windows user
 
 Go to https://help.sap.com/viewer/product/SAP_DATA_SERVICES/ and enter the search term "SAP CommonCryptoLib". In the result list, follow the link to "Obtaining the SAP CommonCryptoLib file in Windows and Unix". Follow the instructions there.
 
-## Deploy from your local machine
-Use the command ``cds deploy --to hana`` to deploy CDS database content to a remote SAP HANA Cloud Service instance. As a prerequisite, install the [Cloud Foundry Command Line Interface](https://docs.cloudfoundry.org/cf-cli/).
+## Deploy to SAP HANA from your local machine
+Use the command ``cds deploy --to hana`` to deploy CDS database content to a remote SAP HANA Cloud Service instance. As a prerequisite, install the [Cloud Foundry Command Line Interface](https://docs.cloudfoundry.org/cf-cli/), use ``cf login`` to connect to the relevant Cloud Foundry space and consider the prerequisites for Windows user as described above.
+
+The ``deploy`` command will create a file ``default-env.json`` in your project which contains the credential to connect to the database ("service key"). **Don't share this file because it contains sensitive information for granting access to your database**. Don't create this file at all for productive databases.
