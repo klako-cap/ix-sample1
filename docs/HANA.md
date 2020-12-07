@@ -65,14 +65,14 @@ The ``deploy`` command will create a file ``default-env.json`` in your project w
 
 <br>
 
-![Step1](assets/create-instance-1.png)
++ ![Step1](assets/create-instance-1.png)
 
 <br>
 
-![Step2](assets/create-instance-2.png)
++ ![Step2](assets/create-instance-2.png)
 <br>
 
-![Step3](assets/create-instance-3.png)
++ ![Step3](assets/create-instance-3.png)
 <br>
 
-![Step4](assets/create-instance-4.png)
++ ![Step4](assets/create-instance-4.png)
