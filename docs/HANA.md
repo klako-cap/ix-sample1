@@ -59,7 +59,9 @@ Use the command ``cds deploy --to hana`` to deploy CDS database content to a rem
 
 The ``deploy`` command will create a file ``default-env.json`` in your project which contains the credential to connect to the database ("service key"). **Don't share this file because it contains sensitive information for granting access to your database**. Don't create this file at all for productive databases.
 
-## Screenshots of HANA Cloud Service instance creation
+## Appendix
+
+### Screenshots of HANA Cloud Service instance creation
 
 <br>
 
