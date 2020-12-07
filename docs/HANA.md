@@ -6,7 +6,7 @@
 Either you get a paid account from SAP, or you start with a trial account. In any case, this [english page](https://www.sap.com/products/cloud-platform.html) and this [german page](https://www.sap.com/germany/products/cloud-platform.html) contains all infos and links you need to get started.
 
 ## Create an SAP HANA Cloud Service instance
-An SAP HANA Cloud Service instance represents an SAP HANA Database instance. Creation works as follows (click here if you need screenshots):
+An SAP HANA Cloud Service instance represents an SAP HANA Database instance. Creation works as follows ([click here](#screenshots-of-hana-cloud-service-instance-creation) if you need screenshots):
 + Use SAP Cloud Platform Cockpit to navigate to one of your Cloud Foundry Spaces. In navigation pane to the left, choose "SAP HANA Cloud". Select the button "Create Database". 
 + Fill in an instance name and the administrator password. Use this password later to administrate the instance as user DBADMIN.
 + Press "Step2". You might want to change memory settings here (only for non-trial accounts). 
